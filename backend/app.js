@@ -14,6 +14,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use("/images", express.static("images"));
 app.use(cors());
+
+
 // Routers
 app.use("/animals", require("./routes/AnimalsRouter"));
 app.use("/cars", require("./routes/CarsGallery"));
