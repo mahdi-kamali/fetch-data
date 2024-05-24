@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(144, 144, 255);
+    padding: 1em;
+    gap: 1rem;
+    a {
+        color: white !important;
+        text-transform: uppercase;
+    }
+}
