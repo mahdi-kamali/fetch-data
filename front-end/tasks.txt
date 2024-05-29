@@ -1,0 +1,8 @@
+
+1 - create cars page
+2 - celebrity page 
+
+
+apis : 
+"/cars"
+"/celebrity"
