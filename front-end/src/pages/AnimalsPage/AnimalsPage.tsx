@@ -13,6 +13,10 @@ export default function AnimalsPage() {
       .get(animalsUrl)
       .then((response) => {
         const data: Animal[] = response.data;
+        //const isExist= data.find((animal) =>{
+          //return animals.id ==="animal@7";
+        //});
+        //console.table(isExist);
         setAnimals(data);
       })
       .catch((err) => {

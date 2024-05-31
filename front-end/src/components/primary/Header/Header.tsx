@@ -9,6 +9,10 @@ export default function Header() {
       <NavLink to={"/animals"}>animals</NavLink>
       <NavLink to={"/about"}>About</NavLink>
       <NavLink to={"/User"}>User</NavLink>
+      <NavLink to={"/cars"}>cars</NavLink>
+      <NavLink to={"/celebrity"}>celebrities</NavLink>
+
+
       
     </header>
   );

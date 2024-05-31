@@ -136,8 +136,17 @@ const carsList = [
 
 // You can continue to add more detailed properties for each car.
 
+//get all cars
 router.get("/", (req, res) => {
   return res.json(carsList);
 });
+
+// Find By ID
+router.get("/:id", (req, res) => {
+  const id = req.params.id;
+  const findedCar = carsList.find((item) => item.id === id);
+  return res.json(findedCar);
+});
+
 
 module.exports = router;
