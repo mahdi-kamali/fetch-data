@@ -9,6 +9,13 @@ export default function CelebrityPage() {
 
     const [celebrities,setCelebrities] = useState<Celebrity[]>([]);
 
+    // fix bug 
+
+
+    // feature add delete update ----
+
+
+    // refactor
 
     useEffect(()=>{
         const celebrityUrl = "http://localhost:3001/celebrities";
