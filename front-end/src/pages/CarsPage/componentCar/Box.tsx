@@ -12,25 +12,28 @@ interface Props {
 
 
 export default function Box ({data,index}:Props) {
-
-  const LargeBox = ()=> (
-    <div className={styles.largeBox}>
-      <p>{data.brand}+ {data.model} + {data.year} </p>
+    return(
+      <main>
+      <div className={styles.box}>
+        <div className={styles.innerBox}>
+      <h3>{data.brand },{ data.model} </h3>
+      <h4>{data.year}</h4>
+      </div>
       <div className={styles.description}>{data.description}</div>
     </div>
-  );
+    </main>
+    );
+  
+   
+  
 
-  const SmallBox = ()=> (
-    <div className={styles.smallBox}>
-    <p>
-    {data.brand}+ {data.model} + {data.year}</p>
-    <div className={styles.description}>{data.description}</div>
-    </div>
-
-  );
+  
 
 
-  if (index === 4) return <LargeBox />;
-    else return <SmallBox/>;
+  
   
 }
+
+
+
+//      <h4>{data.model}</h4>

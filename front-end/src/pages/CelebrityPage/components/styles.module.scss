@@ -1,26 +1,67 @@
-img {
-    display: flex;
+.box{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    transition: all 0.5s ease;
-    &:hover {
-        scale: 1.1;
-    }
 }
 
-p {
-    position: absolute;
-    right: 0rem;
-    left: 0;
-    bottom: 0rem;
-    background: linear-gradient(0deg, black, transparent);
-    padding: 1rem;
-    color: white;
-    font-weight: bold;
-    font-size: 1.25rem;
-    transition: all 1s ease;
-    height: 3rem;
+
+
+
+.imgContainer{
+    width: 100%;
+    max-height:min-content;
+    overflow: hidden;
+    display: flex;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+    border-style: inset;
+    transition: all 0.5s ease;
+    border-radius: 1rem;
+    width: 200px;
+    height: 200px;
+
+   &:hover{
+     transform: scale(0.85);
+   }
+}
+
+.innerDes{
+    //background-color:darkgoldenrod;
+    width: 200px;
+    height: 200px;
+
+    &:hover{
+        color: rgb(255, 203, 80);
+        font-size: 150%;
+    }
+
+}
+
+h2 {
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0.05rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    border-bottom: 1rem;
+
+}
+
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: center;
+
+
+
+}
+
+h5{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
 }
 
 .description {

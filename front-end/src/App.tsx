@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./components/primary/Footer/Footer";
 import Header from "./components/primary/Header/Header";
-import CarsPage from "./pages/CarsPage/CarPage";
+import CarPage from "./pages/CarsPage/CarPage";
 import "./styles/global.scss";
 import AnimalsPage from "./pages/AnimalsPage/AnimalsPage";
 import CelebrityPage from "./pages/CelebrityPage/CelebrityPage";
@@ -18,13 +18,13 @@ export default function App() {
           <Route path="/animals" element={<AnimalsPage/>} />
           <Route path="/home" element={<h1>home page</h1>} />
           <Route path="/about" element={<h1>about page</h1>} />
-          <Route path="/cars" element={<CarsPage />} />
-          <Route path="/celebrities" element={<CelebrityPage />} />
+          <Route path="/cars" element={<CarPage />} />
+          <Route path="/celebrity" element={<CelebrityPage />} />
 
 
         </Routes>
 
-        <Footer />
+        
       </main>
     </BrowserRouter>
   );
